@@ -1,0 +1,16 @@
+Summarise your findings here (see specification).
+Sudoku becomes more difficult when many cells have multiple potential
+values, leading to a higher branching factor and extensive
+backtracking. Therefore, the number of recursive calls can serve as a proxy for the
+complexity of different mystery boards. Mystery Two returned false,
+indicating it is impossible to solve. Mystery One required over 400,000
+recursive calls, while Mystery Three needed approximately 14,000 calls. The
+significant number of calls for Mystery One suggests that it
+encountered several local optima, necessitating deep exploration and
+extensive backtracking. Consequently, one can deduce that Mystery One
+is 'extremely hard', whereas Mystery Three is merely 'hard'. However,
+it should be noted that the initial board configuration may skew the
+difficulty of the board, because of the algorithm's sequential
+approach; configurations with many empty or ambiguous squares in
+the intial rows could lead to more recursive calls due to extensive
+exploration and backtracking. 
